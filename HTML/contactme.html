@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abewe Vanessa">
+    <title>My Brand | Contact Me</title>
+    <link  rel="stylesheet" href="../CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('ul').toggleClass('show')
+            })
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Port</span>folio</h1>
+            </div>
+            <nav>
+                
+                <img src="../images/icons8-menu-rounded-100.png" class="menu">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Me</a></li>
+                    <li><a href="mywork.html">My Work</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   <form class="contact-form">
+    <div class="in">
+    <h1>Contact Me</h1>
+      <input class="name" type="username" placeholder="enter your name" required>  <!--regex-->
+    <input class="phone" type="tel" placeholder="enter your tel number" required><!--regex-->
+    <input class="email" type="email" placeholder="email@gmail.com" required><!--regex-->
+   <textarea id="message"  rows="4" cols="50" placeholder="leave me a message..."></textarea>
+                                                                                         <!--ways to limit words -->  
+ </div>
+    
+<button class="contact-button" type="submit"><B>Sumbit</B></button>      
+   </form>
+    
+</body>
+</html>

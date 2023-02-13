@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Brand | Dashboard</title>
+    <link rel="stylesheet" href="../css/dash.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('.side-nav').toggleClass('show')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="header">
+    
+         <div class="newblog-form">
+                <h1>Title of the Blog</h1>
+                <div class="blog-title">
+                    <input type="text" placeholder=" 1.Learn Java in one week.." class="p">
+                </div>
+                <textarea id="message"  rows="4" cols="50" placeholder="TYPING..."></textarea>
+             <button class="post" type="submit"><B>POST</B></button>
+         </div>
+         <div class="side-nav">
+            <a href="#" class="logo">
+            <img src="/My-Brand/images/Vector (1).png"class="menu">
+        </a>
+        <p>Dashboard</p>
+        <nav>
+        <ul class="nav-links">
+            <li class="current"><a href="newblog.html"><p>New Blogs</p></a></li>
+            <li><a href="listOfBlogs.html"><p>List Of Blogs</p></a></li>
+            <li><a href="comment.html"><p> Comments</p></a></li>
+            <li><a href="index.html"><p>LogOut</p></a></li>
+        </ul>
+        </nav>
+        </div>
+    </div>
+   
+</body>
+</html>

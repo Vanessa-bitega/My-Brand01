@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Brand | Dashboard</title>
+    <link rel="stylesheet" href="../css/dash.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('.side-nav').toggleClass('show')
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="header">
+     
+          <div class="pie-chart">
+        
+            <div class="wrapper">
+            
+            <div class="pie-wrap">
+                    <div class="light-yellow entry">
+                        <p>80k</p>
+                        <p class="entry-value">Likes</p>
+                    </div>
+                    
+                    <div class="sky-blue entry">
+                        <p>60k</p>
+                        <p class="entry-value">comments</p>
+                    </div>
+                    <div class="purple entry">
+                        <p> 1M</p>
+                        <p class="entry-value">Views</p>
+                    </div>
+                    <div class="green entry">
+                        <p> 20k</p>
+                        <p class="entry-value">Blogs</p>
+                    </div>
+            
+            <div class="key-wrap"></div>
+            
+            </div>
+        </div>
+    </div>
+    
+    <div class="side-nav">
+        <a href="#" class="logo">
+        <img src="/My-Brand/images/Vector (1).png" class="menu">
+    </a>
+    <p>Dashboard</p>
+    <nav>
+        <!-- <img src="../images/icons8-menu-rounded-100.png" class="menu"> -->
+    <ul class="nav-links">
+        <li class="current"><a href="newblog.html"><p>New Blogs</p></a></li>
+        <li><a href="listOfBlogs.html"><p>List Of Blogs</p></a></li>
+        <li><a href="comment.html"><p> Comments</p></a></li>
+        <li><a href="index.html"><p>LogOut</p></a></li>
+    </nav>
+    </ul>
+    </div>
+    </div>
+  
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abewe Vanessa">
+    <title>My Brand | Welcome</title>
+    <link  rel="stylesheet" href="../CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('ul').toggleClass('show')
+            })
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Port</span>folio</h1>
+            </div>
+            <nav>
+                
+                <img src="../images/icons8-menu-rounded-100.png" class="menu">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Me</a></li>
+                    <li><a href="mywork.html">My Work</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   <form class="login-form">
+    <h1>Login</h1>
+    <input type="email" placeholder="email@gmail.com"><br>
+    <input type="password" placeholder="password">
+<button class="login-button" type="submit"><a href="dashboard.html">Login</a></button>
+<p>forget password ?</p>
+   </form>
+    
+</body>
+</html>
