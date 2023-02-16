@@ -593,7 +593,8 @@ span {
   background: rgba(93, 153, 187, 0.58);
   box-shadow: 0px 0px 4px 1px #000000;
   color: #ffffff;
-  margin: auto;
+  margin-top: 8px;
+
 }
 #article {
   border: 1px solid rgba(246, 246, 250, 0.021);
@@ -867,25 +868,35 @@ nav ul.show {
 /*CONTTACT ME*/
 
 .contact-form {
-  margin-left: 34em;
-  width: 825px;
-  height: 713px;
-  background: #5d99bb;
-  box-shadow: 0px 4px 4px #000000;
-  margin-top: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+    margin-left: 20em;
+    width: 825px;
+    height: 571px;
+    background: #5d99bb;
+    box-shadow: 0px 4px 4px #000000;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .contact-form h1 {
   text-align: center;
   margin-top: 1em;
 }
+.in{
+    margin-top: -3em;
+}
 .contact-button {
-  margin-left: 334px;
-  border-radius: 81px;
-  font-size: 23px;
-  width: 7em;
+    margin-left: 334px;
+    border-radius: 81px;
+    font-size: 23px;
+    width: 5em;
+    margin-top: -1em;
+    height: 1em;
+}
+.contact-button b{
+    margin-left: -31px;
+    position: relative;
+    top: -14px;
 }
 
 input.phone {
