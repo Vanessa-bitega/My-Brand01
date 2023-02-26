@@ -94,14 +94,14 @@ function changeColor(){
             </article>
         </div>
 <div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
+  <form action="" class="form-container">
    <h1>leave me a comment</h1>
+        <p>id</p>
+    <label for="UserName"><b> UserName </b></label>
+    <input type="text" placeholder="UserName" id="name"name="name" required>
+    <textarea id="comment" name="subject" placeholder="Write something.." style="height:180px;width: 280px;"></textarea>
 
-    <label for="email"><b> Username </b></label>
-    <input type="text" placeholder="UserName" name="email" required>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:180px;width: 280px;"></textarea>
-
-    <button type="submit" class="btn">submit</button>
+    <button type="submit" class="btn" onclick="xhr()" >submit</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>

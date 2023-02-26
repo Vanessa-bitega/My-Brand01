@@ -1,92 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Brand | List Of Blogs</title>
-    <link rel="stylesheet" href="../css/dash.css">
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.menu').click(function () {
-                $('.side-nav').toggleClass('show')
-            })
-        })
-    </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Brand | List Of Blogs</title>
+  <link rel="stylesheet" href="../css/dash.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <link rel="stylesheet" href="../css/table.css">
+  <script>
+    $(document).ready(function () {
+      $('.menu').click(function () {
+        $('.side-nav').toggleClass('show')
+      })
+    })
+  </script>
 </head>
-<style>
-    table, th, td {
-      border:1px solid black;
-      border-collapse: collapse;
-      height: 3em;
-      padding-left: 1em;
-      margin-top: 7em;
-      margin-left: 5em;
-      background-color: #1a76927c;
-      color: #fff;
-    }
-    @media (max-width: 900px){
-      table, th, td {
-      border:1px solid black;
-      border-collapse: collapse;
-      height: 3em;
-      padding-left: 1em;
-      margin-top: 7em;
-      margin-left: 2em;
-      background-color: #1a76927c;
-      color: #fff;
-    }
-      
-    }
-    </style>
+
 <body>
-    <div class="header">
-    
-         <div class="comment-form">
-                <h1>Title of the Blog</h1>               
-                <table style="width:80%">
-                    <tr>
-                        <th> ID</th>
-                      <th style="width:60%">Title of the Blog</th>
-                      <th>Update</th> 
-                      <th>Action</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                      <td> Learn Java in one week</td>
-                      <td>Edit</td>
-                      <td>delete</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                      <td> Learn Java script in one week</td>
-                      <td>Edit</td>
-                      <td>delete</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                      <td> Learn CSS in one week</td>
-                      <td>Edit</td>
-                      <td>delete</td>
-                    </tr>
-                </table>
-         </div>
-         <div class="side-nav">
-          <a href="#" class="logo">
-          <img src="/images/Vector (1).png" class="menu">
+  <div class="header">
+
+
+    <div class="comment-form">
+      <h1>Title of the Blog</h1>
+      
+
+        <table style="width:77%; margin-left: 111px;">
+
+          <tr>
+            <th> ID</th>
+            <th style="width:60%">Title of the Blog</th>
+            <th>Update</th>
+            <th>Action</th>
+          </tr>
+         </table>
+          <div class="comment_form">
+          <tbody class="comment_form">
+      </div>
+      </tbody>
+     
+    </div>
+    <div class="side-nav">
+      <a href="#" class="logo">
+        <img src="/images/Vector (1).png" class="menu">
       </a>
       <p class="dass">Dashboard</p>
-     <nav>
-      <ul class="nav-links">
-          <li class="current"><a href="newblog.html"><p>New Blogs</p></a></li>
-          <li><a href="listOfBlogs.html"><p>List Of Blogs</p></a></li>
-          <li><a href="comment.html"><p> Comments</p></a></li>
-          <li><a href="../index.html"><p>LogOut</p></a></li>
-      </ul>
+      <nav>
+        <ul class="nav-links">
+          <li class="current"><a href="newblog.html">
+              <p>New Blogs</p>
+            </a></li>
+          <li><a href="listOfBlogs.html">
+              <p>List Of Blogs</p>
+            </a></li>
+          <li><a href="comment.html">
+              <p> Comments</p>
+            </a></li>
+          <li><a href="../index.html">
+              <p>LogOut</p>
+            </a></li>
+        </ul>
       </nav>
-      </div>
     </div>
-   
+
+  </div>
 </body>
+<script src="/listOfBlogs.js"></script>
+
 </html>

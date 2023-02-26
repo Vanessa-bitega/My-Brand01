@@ -14,6 +14,26 @@
                 $('ul').toggleClass('show')
             })
         })
+
+
+        function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/22tFVQRgZCaYo5Xg/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)");
+                    //return false;
+				},
+				error: function(){
+					alert("There was an error :(");
+                    //return false;
+				}
+			});
+		}
+
+
+
     </script>
 </head>
 <body>
@@ -36,18 +56,16 @@
             </nav>
         </div>
     </header>
-   <form class="contact-form">
+   <form class="contact-form" id="myForm">
     <div class="in">
     <h1>Contact Me</h1>
-      <input class="name" type="username" placeholder="enter your name" required>  <!--regex-->
-    <input class="phone" type="tel" placeholder="enter your tel number" required><!--regex-->
-    <input class="email" type="email" placeholder="email@gmail.com" required><!--regex-->
-   <textarea id="message"  rows="4" cols="50" placeholder="leave me a message..."></textarea>
+      <input name="name" type="username" placeholder="enter your name" required>  <!--regex-->
+    <input name="phone" type="tel"  placeholder="enter your tel number" required><!--regex-->
+    <input name="email" type="email"  placeholder="email@gmail.com" required><!--regex-->
+   <textarea name="message"  rows="4"  cols="50" placeholder="leave me a message..."></textarea>
                                                                                          <!--ways to limit words -->  
  </div>
-    
-<button class="contact-button" type="submit"><B>Submit</B></button>      
    </form>
-    
+   <button class="contact-button" type="submit" onclick='SubForm()'><B>Submit</B></button>
 </body>
 </html>

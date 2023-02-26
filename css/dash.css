@@ -195,7 +195,7 @@ button:hover {
 .comment-form h1 {
   text-align: center;
   position: relative;
-  top: 2em;
+  top: 0em;
   color: #fff;
 }
 .side-nav.show {

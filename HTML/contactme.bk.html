@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Abewe Vanessa">
-    <title>My Brand | Welcome</title>
+    <title>My Brand | Contact Me</title>
     <link  rel="stylesheet" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.menu').click(function () {
-                $('ul').toggleClass('show')
-            })
-        })
-
-        function login() {
-    var email = document.getElementById("Email").value;
-    var password = document.getElementById("Password").value;
-
-    if (email === "vanessabewe@gmail.com" && password === "15 march") {
-        console.log(email);
-      window.location = "dashboard.html";
-      return false;
-    } else {
-      alert("Incorrect email or password.");
-      return false;
-    }
-  }
-    </script>
+	
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/22tFVQRgZCaYo5Xg/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
 </head>
 <body>
     <header>
@@ -50,13 +49,24 @@
             </nav>
         </div>
     </header>
-   <form class="login-form">
-    <h1>Login</h1>
-    <input type="email" id="Email" placeholder="email@gmail.com"><br>
-    <input type="password" id="Password" placeholder="password">
-<button class="login-button" type="submit" onclick="return login()">Login</button>
-<p>forget password ?</p>
-   </form>
-    
+	<form id="myForm" class="contact-form" >
+        <div class="in">
+        <h1>Contact Me</h1>
+		<label>name</label>
+		<input name="name" placeholder="enter your name"/>
+		<br/>
+		<label>phone</label>
+		<input name="phone" placeholder="enter your name"/>
+		<br/>
+		<label>email</label>
+		<input name="email" placeholder="enter your name"/>
+		<br/>
+		<label>message</label>
+		<textarea name="message" rows="4"  cols="50"></textarea>
+		<br/>
+        </div>
+        
+	</form>
+	<button onclick='SubForm()'>Submit</button>
 </body>
 </html>

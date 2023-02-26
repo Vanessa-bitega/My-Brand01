@@ -181,7 +181,7 @@ nav ul.show {
 }
   .ShowCase {
     flex-direction: column-reverse;
-    margin-left: 50px;
+    margin-left: 36px;
     margin-top: 7em;
   }
   .content-container {
@@ -535,7 +535,7 @@ span {
 @media (max-width: 909px) {
   .container-work {
     margin-top: 5em;
-    margin-left: 2px;
+    margin-left: -23px;
     color: #ffffff;
   }
   .main {
@@ -589,22 +589,26 @@ span {
 }
 
 .container-blogss {
-  height: 40em;
-  background: rgba(93, 153, 187, 0.58);
-  box-shadow: 0px 0px 4px 1px #000000;
-  color: #ffffff;
-  margin-top: 8px;
+    height: 39em;
+    background: rgba(93, 153, 187, 0.58);
+    box-shadow: 0px 0px 4px 1px #000000;
+    color: #ffffff;
+    margin-top: 13px;
+    overflow: scroll;
+    margin-left: 12em;
+    width: 51em;
 
 }
 #article {
   border: 1px solid rgba(246, 246, 250, 0.021);
-  width: 60em;
+  width: 40em;
   line-height: 2;
   margin-left: 5em;
   background-color: #1a76927c;
   border-radius: 30px;
   padding-left: 2em;
   margin-top: -8px;
+  margin-bottom: 2rem;
 }
 #article-one {
   border: 1px solid rgba(246, 246, 250, 0.021);
@@ -664,14 +668,14 @@ span {
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
   line-height: 2;
-  border: 1px solid rgba(246, 246, 250, 0.021);
+  /* border: 1px solid rgba(246, 246, 250, 0.021);
   background-color: rgba(93, 153, 187, 0.8);
-  border-radius: 30px;
+  border-radius: 30px; */
   padding-left: 2em;
   padding-right: 3em;
   width: 43em;
   height: 27em;
-  overflow: scroll;
+  /* overflow: scroll; */
   margin-left: 48px;
   color: #ffffff;
 }
@@ -697,7 +701,7 @@ p.img {
   cursor: pointer;
 }
 nav ul.show {
-  right: 0;
+  right:-8px;
 }
 @media (max-width: 909px) {
   header {
@@ -729,7 +733,7 @@ nav ul.show {
     width: 50%;
     height: 400px;
     top: 90px;
-    right: -200px;
+    right: -200px; 
     transition: all 0.5s;
     background: #5d99bb;
   }
@@ -751,13 +755,13 @@ nav ul.show {
     width: 16em;
     margin-left: 7px;
     margin-top: 2em;
-    background: #1a76927c;
-    border: 1px solid rgb(71, 60, 60);
+    /* background: #1a76927c;
+    border: 1px solid rgb(71, 60, 60); */
   }
   #articl p {
     font-size: 25px;
     line-height: 1.9;
-    width: 13em;
+    /* width: 13em; */
   }
   .page-title {
     font-size: x-large;
@@ -833,8 +837,8 @@ nav ul.show {
     height: 620px;
     box-shadow: 0px 0px 4px 1px #000000;
     background: rgba(93, 153, 187, 0.58);
-    margin-left: 47px;
-    margin-top: 12em;
+    margin-left: 24px;
+    margin-top: 7em;
   }
   .login-form a {
     /* font-weight: 500; */
