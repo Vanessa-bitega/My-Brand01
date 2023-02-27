@@ -896,7 +896,11 @@ nav ul.show {
     width: 5em;
     margin-top: -1em;
     height: 1em;
+    position: relative;
+    top: -2em;
+    left: 15em;
 }
+
 .contact-button b{
     margin-left: -31px;
     position: relative;
@@ -904,30 +908,31 @@ nav ul.show {
 }
 
 input.phone {
-  width: 270px;
-  margin-left: 60px;
+  width: 272px;
+  margin-left: 52px;
   height: 46px;
   padding-left: 16px;
 }
 input.name {
   padding-left: 2em;
-  width: 355px;
+  width: 256px;
   height: 46px;
   margin-top: 42px;
-  margin-left: 59px;
+  margin-left: 107px;
 }
 input.email {
-  margin-left: 59px;
-  width: 52em;
+  margin-left: 107px;
+  width: 44em;
   height: 46px;
   padding-left: 2em;
 }
+
 #message {
-  width: 53em;
-  margin-left: 4em;
+  width: 588px;
+  margin-left: 8em;
   height: 20em;
   padding-left: 2em;
-  padding-top: 1em;
+  padding-top: 1em
 }
 @media (max-width: 909px) {
   .contact-form {

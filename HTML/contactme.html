@@ -18,7 +18,7 @@
 
         function SubForm (){
 			$.ajax({
-				url:"https://api.apispreadsheets.com/data/22tFVQRgZCaYo5Xg/",
+				url:"https://api.apispreadsheets.com/data/Oa5j3xBkNCpQinqn/",
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
@@ -59,10 +59,10 @@
    <form class="contact-form" id="myForm">
     <div class="in">
     <h1>Contact Me</h1>
-      <input name="name" type="username" placeholder="enter your name" required>  <!--regex-->
-    <input name="phone" type="tel"  placeholder="enter your tel number" required><!--regex-->
-    <input name="email" type="email"  placeholder="email@gmail.com" required><!--regex-->
-   <textarea name="message"  rows="4"  cols="50" placeholder="leave me a message..."></textarea>
+      <input name="name" class="name" type="username" placeholder="enter your name" required>  <!--regex-->
+    <input name="phone" class="phone" type="tel"  placeholder="enter your tel number" required><!--regex-->
+    <input name="email"  class="email" type="email"  placeholder="email@gmail.com" required><!--regex-->
+   <textarea name="message"  id="message" rows="4"  cols="50" placeholder="leave me a message..."></textarea>
                                                                                          <!--ways to limit words -->  
  </div>
    </form>
