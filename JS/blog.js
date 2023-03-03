@@ -20,5 +20,4 @@ const container = document.querySelector("#Article");
   container.innerHTML = template;
 };
 
-
-renderPosts();
+window.addEventListener('DOMContentLoaded', ()=>renderPosts());

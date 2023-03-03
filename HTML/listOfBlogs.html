@@ -41,6 +41,18 @@
       </tbody>
      
     </div>
+    <div id="editbox">
+    <form class="new_form" id="updatebox">
+      <div class="newblog-form">
+             <h1>Title of the Blog</h1>
+             <div class="blog-title">
+                 <input type="text" name="title" placeholder=" 1.Learn Java in one week.." id="title"  class="p">
+             </div>
+             <textarea name="body" id="message"  rows="4" cols="50" placeholder="TYPING..."></textarea>
+          <button class="post" type="submit" onclick="updateBlog()"><B>Update</B></button>
+      </div>
+     </form>
+    </div>
     <div class="side-nav">
       <a href="#" class="logo">
         <img src="/images/Vector (1).png" class="menu">
@@ -65,7 +77,21 @@
     </div>
 
   </div>
-</body>
-<script src="/listOfBlogs.js"></script>
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6402351331ebfa0fe7f086f7/1gqk9ulq4';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
 
+<script src="/JS/listOfBlogs.js"></script>
+<script src="/JS/update.js"></script>
+</body>
 </html>

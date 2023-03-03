@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Brand | Comments</title>
     <link rel="stylesheet" href="../css/dash.css">
+    <link rel="stylesheet" href="../css/table.css">
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script>
         $(document).ready(function () {
@@ -13,9 +14,36 @@
                 $('.side-nav').toggleClass('show')
             })
         })
+
+    const form = document.getElementById('comment-form');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); // prevent the default form submission
+
+      // get the form data
+      const formData = new FormData(form);
+
+      // send the form data to the server using fetch
+      fetch('http://localhost:3004/data/', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Error submitting comment.');
+        }
+      })
+      .then(data => {
+        console.log(data); // log the server response
+        alert('Comment submitted successfully!');
+        form.reset(); // reset the form
+      })
+  
+    })
     </script>
 </head>
-<style>
+ <style>
   *{
     text-decoration:none ;
     color: #fff;
@@ -47,19 +75,17 @@
 <body>
     <div class="header">
       
-         <div class="comment-form">
+          <div class="comment-form"> 
                 <h1>Comments Table</h1>               
-                <table style="width:80%">
-                    <tr>
-                        <th> ID</th>
-                      <th style="width:60%">Title of the Blog</th>
-                      <th>Comment</th> 
-                      <th>Action</th>
-                    </tr>
-                  </table>
-                  <div class="post_form">
-                    <tbody class="post_form"></tbody>
-                  </div>
+                
+                  <form class="main-comment">
+              
+                   <div id="comment">
+                   
+                         </div>
+                       
+                        </form>
+                  
          </div>
     </div>
 
@@ -77,7 +103,20 @@
   </ul>
   </nav>
   </div>
-<script src="/comment.js"></script>
+<script src="/JS/comment.js"></script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6402351331ebfa0fe7f086f7/1gqk9ulq4';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
    
 </body>
 </html>

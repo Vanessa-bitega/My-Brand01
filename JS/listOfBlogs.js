@@ -15,8 +15,8 @@ const renderPosts = async () => {
     <table style="width:80%">
         <tr>
      <td>${post.id}</td>
-     <td>${post.title.slice(0, 20)}</td>
-     <td><button>Edit</button></td>
+     <td>${post.title.slice(0, 12)}</td>
+     <td><button id="edit-post" onclick="openModal(${post.id});">Edit</button></td>
      <td>
      <button class="deleteblog" onclick="deleteBlog(${post.id});">delete</button>
      </td>

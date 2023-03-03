@@ -1,12 +1,12 @@
 {
   "table": [
     {
-      "title": "learn with me in the garden alone with a knife",
+      "title": "first day of school",
       "body": "xdcfgvbjhnkmr,tuj\nIKL;lk\nj';h[plgkojifuhdgystfrfgvjnhmk",
       "id": 1
     },
     {
-      "title": "learn with me in the garden alone with a knife",
+      "title": "stay around",
       "body": "xdcfgvbjhnkmr,tuj\nIKL;lk\nj';h[plgkojifuhdgystfrfgvjnhmk",
       "id": 2
     },
@@ -17,14 +17,55 @@
     },
     {
       "title": "weeelcome tooo hell",
-      "body": "aaaaaaaaaaaaaaaahhhhh it BUUUUUUUUUUUUU",
+      "body": "Welcome to ISSUE #167 of The Overflow! This newsletter is by developers, for developers, written and curated by the Stack Overflow team and Cassidy Williams. This week: Are clouds moving in-house? Can you quit to avoid a PIP? What's the best way to change your mindset to include accessibility?",
       "id": 4
+    },
+    {
+      "title": ":bell: Good morning  team-predators !!",
+      "body": "  It's time to post your updates in Thread.\n  Be sure to include:\n  What you've been working on Yesterday?\n  What are you planning to work on Today?\n  Blocker(s)?\n  Trello Board Link, GitHub Repo Link, Production Link of your deployed version",
+      "id": 5
     }
   ],
   "data": [
     {
-      "name": "vanessas",
-      "comment": "wesdfghjukiop'l;['.,mnbvdse4r5t6y7u8i90op;['./,mnbvcxdsert6y7u8i9op;['./,mnbvcdxert6y7u8i9ol,mnb cvdr"
+      "name": "Vanessa",
+      "comment": "rude",
+      "id": 1
+    },
+    {
+      "name": "Abe",
+      "comment": "cool",
+      "id": 2
+    },
+    {
+      "name": "Vanessa",
+      "comment": "stinky",
+      "id": 3
+    },
+    {
+      "name": "Abewe Vanessa",
+      "comment": "<3 <3",
+      "id": 4
+    },
+    {
+      "name": "holy",
+      "comment": "shit",
+      "id": 5
+    },
+    {
+      "name": "holy",
+      "comment": "shit",
+      "id": 6
+    },
+    {
+      "name": "luci",
+      "comment": "i'm fire",
+      "id": 7
+    },
+    {
+      "name": "Abewe Vanessa",
+      "comment": "facts",
+      "id": 8
     }
   ]
 }

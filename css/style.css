@@ -761,7 +761,8 @@ nav ul.show {
   #articl p {
     font-size: 25px;
     line-height: 1.9;
-    /* width: 13em; */
+    width: 13em; 
+    margin-left: -1em;
   }
   .page-title {
     font-size: x-large;
