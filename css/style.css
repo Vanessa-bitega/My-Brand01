@@ -691,7 +691,7 @@ p.img {
 }
 .img2 {
     font-size: x-small;
-    margin-top: -264px;
+    margin-top: 261px;
     margin-left: 76em;
 }
 #like {
@@ -746,6 +746,9 @@ nav ul.show {
     position: relative;
     top: -28px;
   }
+  input#title {
+    margin-top: 62px;
+}
 
   .main-colum {
     width: 20em;

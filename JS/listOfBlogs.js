@@ -4,34 +4,51 @@ const deletebtn = document.querySelector(".deleteblog");
 
 
 const renderPosts = async () => {
-  let uri = 'http://localhost:3004/table';
+  let uri = 'https://tan-fair-bass.cyclic.app/api/blogs';
   const res = await fetch(uri);
-  const posts = await res.json();
+  const { data } = await res.json();
+  
+  console.log(data);
+  
   let template = "";
-  posts.forEach((post) => {
+  data.forEach((post) => {
     template += `
    
     <div class="comment_form">              
     <table style="width:80%">
         <tr>
-     <td>${post.id}</td>
+     <td>${post._id}</td>
      <td>${post.title.slice(0, 12)}</td>
-     <td><button id="edit-post" onclick="openModal(${post.id});">Edit</button></td>
+     <td><button id="edit-post" onclick="openModal(${post._id});">Edit</button></td>
      <td>
-     <button class="deleteblog" onclick="deleteBlog(${post.id});">delete</button>
+     <button class="deleteblog" onclick="deleteBlog(${post._id});">delete</button>
      </td>
       
        </tr>
     </table>
      </div>
-    `;
+    `
   });
   container.innerHTML = template;
 };
-const deleteBlog = async(_Blog_id) =>{
-    await fetch(`http://localhost:3004/table/${_Blog_id}`,{
-        method:'DELETE',
-    })
+
+
+const deleteBlog = async (_id) => {
+  const response = await fetch(`https://tan-fair-bass.cyclic.app/api/blog/delete/${_id}`, {
+    method: 'DELETE'
+  });
+
+  if (response.ok) {
+    console.log('Blog deleted successfully');
+    renderPosts();
+  } else {
+    console.error('Error deleting blog');
+  }
 }
+// const deleteBlog = async(_Blog_id) =>{
+//     await fetch(`http://localhost:3004/table/${_Blog_id}`,{
+//         method:'DELETE',
+//     })
+// }
 
  window.addEventListener("DOMContentLoaded", () => renderPosts());

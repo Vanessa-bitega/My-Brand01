@@ -2,18 +2,18 @@
 
 const renderPosts = async () => {
 const container = document.querySelector("#Article");
-  let uri = 'http://localhost:3004/table';
+  let uri = 'https://tan-fair-bass.cyclic.app/api/blogs';
   const res = await fetch(uri);
-  const posts = await res.json();
+  const {data} = await res.json();
+  console.log(data);
   let template = "";
-  posts.forEach((post) => {
+  data.forEach((post) => {
     template += `
    
     <div id="article">
     <h1>${post.title}</h1>
-    <p><small>$${post.title}</small></p>
-    <p>${post.body.slice(0, 200)}</p>
-    <a href="/HTML/readmore.html?id=${post.id}">Read more...</a>
+    <p><small>${post.snippet}</small></p>
+    <a href="/HTML/readmore.html?id=${post.body.id}">Read more...</a>
     </div>
     `
   });

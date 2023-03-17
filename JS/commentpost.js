@@ -7,7 +7,7 @@ const createPost = async ()=>{
         comment:comment_form.comment.value,
        
     }
-    await fetch(`http://localhost:3004/data`,{
+    await fetch(` https://tan-fair-bass.cyclic.app/api//blog/:blogId/comment`,{
         method:'POST',
         body:JSON.stringify(doc),
         headers:{'content-type' : 'application/json'}

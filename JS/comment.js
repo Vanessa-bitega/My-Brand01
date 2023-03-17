@@ -2,17 +2,17 @@
  const container = document.querySelector("#comment");
 const renderPosts = async () => {
    
-      let uri = `http://localhost:3004/data`;
+      let uri = `https://tan-fair-bass.cyclic.app/api//blog/:blogId/comment`;
       const res = await fetch(uri);
-      const posts = await res.json();
+      const data = await res.json();
       let template = "";
-      posts.forEach((post) => {
+      data.forEach((post) => {
         template += `
         <div id="comment">
         
         <img src="../images/account_circle_FILL1_wght300_GRAD0_opsz48.png">
         <h4>${post.name}</h4>
-        <p>${post.comment}</p>
+        <p>${post.commentBody}</p>
         <button onclick="deleteComment(${post.id})"> delete </button>
         </div>
         `

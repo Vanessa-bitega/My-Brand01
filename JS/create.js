@@ -5,10 +5,11 @@ const createPost = async (e)=>{
    const doc={
        id:form.id.value,
        title:form.title.value,
+       snippet:form.title.value,
        body:form.body.value,
       
    }
-   await fetch('http://localhost:3004/table',{
+   await fetch( 'https://tan-fair-bass.cyclic.app/api/blog/create',{
        method:'POST',
        body:JSON.stringify(doc),
        headers:{ 'content-type' : 'application/json' }
