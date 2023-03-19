@@ -1,7 +1,7 @@
 const id = new URLSearchParams(window.location.search).get("_id");
 const blogs = document.getElementById('articl')
 const renderBlog = async ()  =>{
-    const res = await fetch(`https://tan-fair-bass.cyclic.app/api/blog/:id`);
+    const res = await fetch(`https://tan-fair-bass.cyclic.app/api/blog/${id}`);
 	const {data}= await res.json();
     console.log('this is a blog', data);
      let template = '';
@@ -9,8 +9,9 @@ const renderBlog = async ()  =>{
    
     template += `
     <p><u><b>${post.title}</b></u><br></p>
-    <p><u><b>${post.snippet}</b></u><br></p>
-    <p> ${post.body.id}</p>
+    <p>${post.body}</p>
+    <p> ${post._id}</p>
+    <p class="img2">134k</p>
     <span class="material-symbols-outlined" id="like"onclick="changeColor()">
                     heart_plus
                     </span>  

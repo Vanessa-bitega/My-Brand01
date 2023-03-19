@@ -4,10 +4,10 @@ const createPost = async ()=>{
     const doc={
         id:comment_form.id.value,
         name:comment_form.name.value,
-        comment:comment_form.comment.value,
+        commentBody:comment_form.commentBody.value,
        
     }
-    await fetch(` https://tan-fair-bass.cyclic.app/api//blog/:blogId/comment`,{
+    await fetch(` https://tan-fair-bass.cyclic.app/api//blog/${blogId}/comment`,{
         method:'POST',
         body:JSON.stringify(doc),
         headers:{'content-type' : 'application/json'}

@@ -1,10 +1,10 @@
-// const id = new URLSearchParams(window.location.search).get("id");
+ const id = new URLSearchParams(window.location.search).get("id");
 const container = document.querySelector(".comment_form");
 const deletebtn = document.querySelector(".deleteblog");
 
 
 const renderPosts = async () => {
-  let uri = 'https://tan-fair-bass.cyclic.app/api/blogs';
+  let uri = `https://tan-fair-bass.cyclic.app/api/blogs`;
   const res = await fetch(uri);
   const { data } = await res.json();
   
@@ -17,7 +17,7 @@ const renderPosts = async () => {
     <div class="comment_form">              
     <table style="width:80%">
         <tr>
-     <td>${post._id}</td>
+     <td>${post._id.slice(0, 6,)}</td>
      <td>${post.title.slice(0, 12)}</td>
      <td><button id="edit-post" onclick="openModal(${post._id});">Edit</button></td>
      <td>
