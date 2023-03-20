@@ -1,28 +1,29 @@
-
-let blogid = '';
+// const id = new URLSearchParams(window.location.search).get("id");
 const editbox = document.getElementById('editbox');
 const updatebox = document.getElementById('updatebox');
 editbox.style.display = 'none';
-const openModal = async(_id) =>{
-        const res = await fetch (`https://tan-fair-bass.cyclic.app/api/blog/update${_id}`)
+
+const openModal = async (id) => {
+    editbox.style.display = 'block';
+        const res = await fetch (`https://tan-fair-bass.cyclic.app/api/blog/update/${id}`)
         let post = await res.json();
-       
-       editbox.style.display = 'block';
-        updatebox.title.valueOf = post.title;
+       console.log(post)
+        updatebox.title.value = post.data.title;
         
-        updatebox.message.valueOf = post.body;
-        blogid = post._id;
+        updatebox.message.value = post.data.body;
+        updatebox.elements.id.value =  post.data._id;
         
 
 }
 const updateBlog = async()=>{
+    const id = updatebox.elements.id.value;
     const Post = {
-        title: updatebox.title.valueOf,
+        title: updatebox.title.value,
         
-        body: updatebox.message.valueOf,
+        body: updatebox.message.value,
     };
   
-    const res = await fetch(`https://tan-fair-bass.cyclic.app/api/blog/update/${blogid}`,{
+    const res = await fetch(`https://tan-fair-bass.cyclic.app/api/blog/update/${id}`,{
         method:"PUT",
         headers: {
             "Content-Type": "application/json",

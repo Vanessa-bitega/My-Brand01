@@ -23,7 +23,7 @@
       const formData = new FormData(form);
 
       // send the form data to the server using fetch
-      fetch('http://localhost:3004/data/', {
+      fetch(`https://tan-fair-bass.cyclic.app/api/blog/${id}/comment`, {
         method: 'POST',
         body: formData
       })
@@ -36,7 +36,7 @@
       })
       .then(data => {
         console.log(data); // log the server response
-        alert('Comment submitted successfully!');
+      
         form.reset(); // reset the form
       })
   

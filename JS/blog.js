@@ -8,12 +8,12 @@ const container = document.querySelector("#Article");
   console.log(data)
   let template = "";
   data.forEach((post) => {
-    console.log(post._id);
+    // console.log(post._id);
     template += `
    
     <div id="article">
     <h1>${post.title}</h1>
-    <p>${post.title.slice(0,20)}</p>
+    <p>${post.body.slice(0,20)}</p>
     <a href="/HTML/readmore.html?id=${post._id}">Read more...</a>
     </div>
     `
